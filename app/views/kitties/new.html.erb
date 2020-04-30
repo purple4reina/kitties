@@ -1,0 +1,22 @@
+<h1>Create your kitty here</h1>
+
+<%= form_with scope: :kitty, url: kitties_path, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :color %><br>
+    <%= form.text_field :color %>
+  </p>
+
+  <p>
+    <%= form.label :age %><br>
+    <%= form.text_field :age %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
